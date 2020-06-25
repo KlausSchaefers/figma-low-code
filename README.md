@@ -1,5 +1,5 @@
-# QUX-LowCode
-The Figmae-Low-Code package provides a new approach to the hand-off problem (See details below). The core of the solution is the QUX component,
+# Fimga-Low-Code
+The Figma-Low-Code package provides a new approach to the hand-off problem (See details below). The core of the solution is the <Figma> component,
 which renders the visual design and allows the developers to focus on business logic, without restricting the developers' freedom. The component enables:
 
 1. Zero Code rendering of visual design and animations
@@ -17,13 +17,13 @@ which renders the visual design and allows the developers to focus on business l
 
 We envision the following workflow to enable painless collaboration between designers and developers:
 
-![The QUX low code workflow](assets/Workflow.png "Fima-Low-Code workflow")
+![The Figma low code workflow](assets/Workflow.png "Figma-Low-Code workflow")
 
 1. The designer creates an initial design in Figma
 2. The developer adds data binding and method callbacks in Figma using the UX Figma-Low-Code plugin.
 3. The developer sets up a new project (Vue.js for now) and includes the <Figma> component
-4. The developer loads the design from Quant-UX and creates the required methods and fills them with business logic.
-5. The QUX component renders the design and invokes the callbacks in clicks.
+4. The developer link the Figmae design and creates the required methods and fills them with business logic.
+5. The <Figma> component renders the design and invokes the callbacks in clicks.
 6. Changes in the design are transparent to the developer, he just reloads the design from Quant-UX.
 
 
