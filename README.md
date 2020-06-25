@@ -2,18 +2,17 @@
 The Figma-Low-Code package provides a new approach to the hand-off problem (See details below). The core of the solution is the **Figma** component,
 which renders the visual design and allows the developers to focus on business logic, without restricting the developers' freedom. The component enables:
 
-1. Zero Code rendering of visual design and animations
+1. Zero Code rendering of visual design.
 2. Clear separation of UI and business logic
 3. Developers can focus on code
 4. Developers can use the tools and frameworks of their choice.
-5. Designers can use the powerful visual design tool
+5. Designers stick with their favorite tool
 6. Easy extension with custom callback functions
 7. Full support of VUE data binding.
 8. Extension with custom components
 9. Extension with custom CSS
 10. Rich library of stylable components.
 
-Figma-Low-Code was developed by [Quant-UX](https://quant-ux.com), the only open source prototyping and testing tool.
 
 ## Workflow
 
@@ -88,9 +87,13 @@ export default {
 ```
 
 
-## Figma Plugin
+## Figma Plugin (Private Beta)
 
-To use the advanced features such as data and method binding, you must install the Figma-Low-Code plugin.
+To use the advanced features such as data, method binding or input widgets, you must install the Figma-Low-Code plugin.
+
+![The Figma-Low-Code plugin](assets/Plugin.png "Figma-Low-Code plugin")
+
+The plugin is currently in a private beta. You can request access [here] https://quant-ux.com/#/contact.html)
 
 ## Data Binding
 
@@ -115,7 +118,7 @@ myMethod (value, element, e) {
 ## Deployment
 
 Working with the file and access key is great for testing and development, because changes in Figma are visible after a reload.
-However, for production you should **NEVER** use the access token, because it is too slow and potentially unsecure as it gives access
+However, for production you should **NEVER** use the access token, as it gives access
 to all your projects. You can download all files into the project by calling the download script.
 
 ```
@@ -222,3 +225,7 @@ in the form of an image and some specs. The developer has now to rebuild the
 entire design using the programming language of his choice. Although this process is
 proven, it is rather slow and not very efficient. In particular later changes in
 the design makes it hard to automize this work through code generation tools.
+
+# Credits
+
+Figma-Low-Code is based on vue-low-code developed by [Quant-UX](https://quant-ux.com).
