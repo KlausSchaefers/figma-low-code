@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Figma :figma="figmaFile" v-model="viewModel"/>
+    <Figma :figma="figmaConfig" v-model="viewModel"/>
   </div>
 </template>
 

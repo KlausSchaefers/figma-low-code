@@ -43,6 +43,13 @@ Afterwards, load all dependecies with the following command
 npm install
 ```
 
+Finally start the server
+
+```
+npm run serve
+```
+
+
 Once done, open the 'src/views/Home.vue' and enter your figma file id and the access code. You can
 get the access code in your Figma settings [(Details)](https://www.figma.com/developers/api#access-tokens).
 The file id is the second last url parameter
@@ -111,9 +118,11 @@ In the Figma-Low-Code plugin you can define javascript callbacks for the element
 ```
 myMethod (value, element, e) {
  ...
+ return 'Screen2'
 }
 ```
 
+If a method return a String matching a screen name, the page will be loaded. In the example the screen with the name 'Screen2'
 
 ## Deployment
 
