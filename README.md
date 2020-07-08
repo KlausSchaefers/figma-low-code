@@ -23,10 +23,10 @@ Figma-Low-Code enables the following workflow to facilitate painless collaborati
 1. The designer creates an initial design in Figma
 2. The developer adds data binding and method callbacks in Figma using the UX Figma-Low-Code plugin.
 3. The developer sets up a new project (Vue.js for now) and includes the **Figma** component
-4. The developer link the Figmae design and creates the required methods and fills them with business logic.
-5. The **Figma**  component renders the design and invokes the callbacks in clicks.
+4. The developer links to the Figma design and creates the required methods and fills them with business logic.
+5. The **Figma** component renders the design and invokes the callbacks in clicks.
 6. Changes in the design are transparent to the developer, he just reloads the design from Figma.
-7. For deployment the developer downlaods the figma file to freze the design
+7. For deployment the developer downlaods the figma file to freeze the design
 
 
 # How to use Figma-low-code
