@@ -132,7 +132,7 @@ You can specify the databinding with the help of the Figma-Low-Code plugin:
 3. Select the 'Data & Mathod Binding tab.'
 4. Specify the name of the varibale, for instance 'user.name'.
 
-![The Figma-Low-Code plugin](assets/PluginType.png "Select the type")
+![The Figma-Low-Code plugin](assets/PluginBinding.png "Set the data binding")
 
 During runtime, the low-code component will update the viewModel and add the values entered by the user, e.g.
 
@@ -152,6 +152,9 @@ In the Figma-Low-Code plugin you can define javascript callbacks for the element
 2. Select the desired element.
 3. Select the 'Data & Mathod Binding tab.'
 4. Enter the name of the method taht should be called on the event (click or change are supported for now)
+
+![The Figma-Low-Code plugin](assets/PluginBinding.png "Select the method name ot be called")
+
 
 During run time, the figma component will look for a method with the given name in the parent component (in the example  Home.vue). If the method exists, it will be called. The method will have the following signature:
 
@@ -176,7 +179,7 @@ If the provided input elements are not enough, you can also hook in your own VUE
 4. Select Custom
 5. Enter the name of the component
 
-![The Figma-Low-Code plugin](assets/PluginCustom.png "Select the type")
+![The Figma-Low-Code plugin](assets/PluginBinding.png "Select the type")
 
 Furthermore you will need to register the component with the **Figma** component.
 
