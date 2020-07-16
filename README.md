@@ -3,15 +3,16 @@ The Figma-Low-Code package provides a new approach to the hand-off problem (See 
 which renders the visual design and allows the developers to focus on business logic, without restricting the developers' freedom. The component enables:
 
 1. Zero Code rendering of visual design.
-2. Clear separation of UI and business logic
-3. Developers can focus on code
-4. Developers can use the tools and frameworks of their choice.
-5. Designers stick with their favorite tool
-6. Easy extension with custom callback functions
-7. Full support of VUE data binding.
-8. Extension with custom components
-9. Extension with custom CSS
-10. Rich library of stylable components.
+2. Design changes do not require code changes
+3. Clear separation of UI and business logic
+4. Developers can focus on code
+5. Developers can use the tools and frameworks of their choice.
+6. Designers stick with their favorite tool
+7. Easy extension with custom callback functions
+8. Full support of VUE data binding.
+9. Extension with custom components
+10. Extension with custom CSS
+11. Rich library of stylable components.
 
 
 ## Workflow
@@ -100,20 +101,59 @@ To use the advanced features such as data, method binding or input widgets, you 
 
 ![The Figma-Low-Code plugin](assets/Plugin.png "Figma-Low-Code plugin")
 
-The plugin is currently in a private beta. You can request access [here](https://quant-ux.com/#/contact.html)
+The plugin is currently in a private beta. You can request access [here](https://quant-ux.com/#/contact.html).
+
+
+## Input Elements
+
+By default Figma-Low-Code renders all elements of the design as div, span and label elements. Often this is not enough, and you
+would like to allow the user to enter to. You can override the default rendering by specifying the desired element type, for instance
+text fields or password fields.
+To do so, you need to launch the Figma-Low-Code plugin and select an element. Once an element is selected, you can select from a list of
+widgets the desired element type.
+
+![The Figma-Low-Code plugin](assets/PluginType.png "Select the type")
+
+
+
 
 ## Data Binding
 
-Figma-Low-Code supports VUE data binding. You have to pass a v-model to the **Figma** component. The databindings for the
-widgets must be defined in the Quant-UX canvas.
+Figma-Low-Code supports VUE data binding. You have to pass a v-model to the **Figma** component.
 
 ```
-<Figma :figma="figmaFile" v-model="viewModel"/>/>
+<Figma :figma="figmaFile" v-model="viewModel"/>
+```
+
+You can specify the databinding with the help of the Figma-Low-Code plugin:
+
+1. Simply launch the plugin
+2. Select the desired element.
+3. Select the 'Data & Mathod Binding tab.'
+4. Specify the name of the varibale, for instance 'user.name'.
+
+![The Figma-Low-Code plugin](assets/PluginType.png "Select the type")
+
+During runtime, the low-code component will update the viewModel and add the values entered by the user, e.g.
+
+```
+    viewModel: {
+        user: {
+          name: "Klaus"
+        }
+    }
 ```
 
 ## Method Binding
 
-In the Figma-Low-Code plugin you can define javascript callbacks for the elements. Place the methods in the parent compoent of **Figma**. The method will have the following signature:
+In the Figma-Low-Code plugin you can define javascript callbacks for the elements. You can specify the databinding with the help of the Figma-Low-Code plugin:
+
+1. Simply launch the plugin
+2. Select the desired element.
+3. Select the 'Data & Mathod Binding tab.'
+4. Enter the name of the method taht should be called on the event (click or change are supported for now)
+
+During run time, the figma component will look for a method with the given name in the parent component (in the example  Home.vue). If the method exists, it will be called. The method will have the following signature:
 
 ```
 myMethod (value, element, e) {
@@ -122,9 +162,65 @@ myMethod (value, element, e) {
 }
 ```
 
-If a method return a String matching a screen name, the page will be loaded. In the example the screen with the name 'Screen2'
+If a method return a String matching a screen name, the page will be loaded. In the example the screen with the name 'Screen2'.
 
-## Deployment
+
+
+## Custom components
+
+If the provided input elements are not enough, you can also hook in your own VUE components. To do so:
+
+1. Simply launch the plugin
+2. Select the desired element.
+3. Select the 'Element Type' tab
+4. Select Custom
+5. Enter the name of the component
+
+![The Figma-Low-Code plugin](assets/PluginCustom.png "Select the type")
+
+Furthermore you will need to register the component with the **Figma** component.
+
+```
+<template>
+  <div class="home">
+    <Figma :figma="figmaConfig" v-model="viewModel" :config="config"/>
+  </div>
+</template>
+
+<script>
+import Vue from "vue";
+import Figma from 'vue-low-code'
+import MyComponent from './MyCompenet.vue
+Vue.use(Figma);
+
+export default {
+  name: 'Home',
+  data: function () {
+    return {
+      figmaConfig: {
+        figmaFile: '<The figme file id here>',
+        figmaAccessKey: '<Your Figma access key ONLY for development>',
+      },
+      viewModel: {
+      },
+      config: {
+        components: {
+          'MyComponent': MyComponent
+        }
+      }
+    }
+  },
+  components: {
+  },
+  methods: {
+  }
+}
+</script>
+
+```
+
+
+# Deployment
 
 Working with the file and access key is great for testing and development, because changes in Figma are visible after a reload.
 However, for production you should **NEVER** use the access token, as it gives access
