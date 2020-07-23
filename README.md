@@ -14,6 +14,9 @@ which renders the visual design and allows the developers to focus on business l
 10. Extension with custom CSS
 11. Rich library of stylable components.
 
+# Plugin:
+
+You can find the plugin [here](https://www.figma.com/community/plugin/858477504263032980/Figma-Low-Code)
 
 ## Workflow
 
@@ -95,9 +98,9 @@ export default {
 ```
 
 
-## Figma Plugin (Private Beta)
+## Figma Plugin
 
-To use the advanced features such as data, method binding or input widgets, you must install the Figma-Low-Code plugin.
+To use the advanced features such as data, method binding or input widgets, you must install the  [Figma-Low-Code plugin](https://www.figma.com/community/plugin/858477504263032980/Figma-Low-Code).
 
 ![The Figma-Low-Code plugin](assets/Plugin.png "Figma-Low-Code plugin")
 
