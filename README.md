@@ -104,7 +104,6 @@ To use the advanced features such as data, method binding or input widgets, you 
 
 ![The Figma-Low-Code plugin](assets/Plugin.png "Figma-Low-Code plugin")
 
-The plugin is currently in a private beta. You can request access [here](https://quant-ux.com/#/contact.html).
 
 
 ## Input Elements
