@@ -10,24 +10,27 @@ import Figma from 'vue-low-code'
 Vue.use(Figma);
 
 // import JSON file for deployment
-// import app form './app.json'
+// import app from './app.json'
 
 export default {
   name: 'Home',
   data: function () {
     return {
+      // figmaJSON: app,
       figmaConfig: {
         figmaFile: '',
         figmaAccessKey: '',
       },
-      // pass figmaFile for deployment
-      // figmaFile: app
       viewModel: {
-        // add your data model here
+        /**
+         * Add your view model here
+         */
       },
       config: {
         components: {
-          // register custom components here
+          /**
+           * Register costum components here
+           */
         }
       }
     }
@@ -35,6 +38,9 @@ export default {
   components: {
   },
   methods: {
+    /**
+     * Place your methods here
+     */
   }
 }
 </script>
