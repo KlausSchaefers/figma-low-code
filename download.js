@@ -2,8 +2,16 @@
 const fs = require('fs');
 const fetch = require('node-fetch');
 const util = require('util');
+const chalk = require('chalk');
 const vueLowCode = require('vue-low-code')
 
+console.debug(`\n\n`)
+console.debug(`___ _                     _                    ___         _     `)
+console.debug(`| __(_)__ _ _ __  __ _ ___| |   _____ __ _____ / __|___  __| |___ `)
+console.debug("| _|| / _` | '  \\/ _` |___| |__/ _ \\ V  V /___| (__/ _ \\/ _` / -_)")
+console.debug("|_| |_\\__, |_|_|_\\__,_|   |____\\___/\\_/\\_/     \\___\\___/\\__,_\\___|")
+console.debug("      |___/                                             ")
+console.debug(`\n\n`)
 
 /**
  * Change here the destimation folder. If you change the image folder
@@ -23,8 +31,8 @@ const figmaFileId = process.argv[3]
  * Check if inout is ok
  */
 if (!figmaAccessKey || !figmaFileId) {
-  console.debug('Plesse add the figma access token and file id')
-  console.debug('node download.js <accessToken> <fileKey>')
+  console.debug(chalk.red('Plesse add the figma access token and file id'))
+  console.debug('Example: node download.js <accessToken> <fileKey>')
   return
 }
 
@@ -42,9 +50,9 @@ if (!globalThis.fetch) {
 const streamPipeline = util.promisify(require('stream').pipeline);
 vueLowCode.setLogLevel(-5)
 const figmaService = new vueLowCode.createFigmaService(figmaAccessKey)
-console.debug('Download Figma file...')
+console.debug(chalk.blue('Download Figma file...'))
 figmaService.get(figmaFileId, true).then(async app => {
-  console.debug('Download images:')
+  console.debug(chalk.blue('Download images:'))
 
   const widgetsWithImages = Object.values(app.widgets).filter(w => {
     return w.props.figmaImage
@@ -52,7 +60,7 @@ figmaService.get(figmaFileId, true).then(async app => {
   var promisses = widgetsWithImages.map(async w => {
     const imageURL = w.props.figmaImage
     var imageFileTarget = fileFolderTarget + '/' + w.id +'.png'
-    console.debug('  - ', imageFileTarget)
+    console.debug(chalk.blueBright('  - ' + imageFileTarget))
     const response = await fetch(imageURL);
     if (response.ok) {
       w.style.backgroundImage = {
@@ -64,9 +72,10 @@ figmaService.get(figmaFileId, true).then(async app => {
   await Promise.all(promisses)
 
 
-  console.debug('Write app file...')
+  console.debug(chalk.blue('Write app file...'))
   var content = JSON.stringify(app, null, 2)
   fs.writeFileSync(jsonFileTarget, content)
 
-  console.debug('Done. Now import the JSON file in the Home.vue')
+  console.debug(`\n\n`)
+  console.debug(chalk.green('Done!'), 'Now import the JSON file in', chalk.green('Home.vue'))
 })
