@@ -115,8 +115,6 @@ text fields or password fields.
 To do so, you need to launch the Figma-Low-Code plugin and select an element. Once an element is selected, you can select from a list of
 widgets the desired element type.
 
-![The Figma-Low-Code plugin](assets/PluginType.png "Select the type")
-
 
 
 
@@ -130,12 +128,11 @@ Figma-Low-Code supports VUE data binding. You have to pass a v-model to the **Fi
 
 You can specify the databinding with the help of the Figma-Low-Code plugin:
 
-1. Simply launch the plugin
+1. Launch the plugin
 2. Select the desired element.
-3. Select the 'Data & Mathod Binding tab.'
+3. Select the 'Low Code Tab'
 4. Specify the name of the varibale, for instance 'user.name'.
 
-![The Figma-Low-Code plugin](assets/PluginBinding.png "Set the data binding")
 
 During runtime, the low-code component will update the viewModel and add the values entered by the user, e.g.
 
@@ -151,12 +148,10 @@ During runtime, the low-code component will update the viewModel and add the val
 
 In the Figma-Low-Code plugin you can define javascript callbacks for the elements. You can specify the databinding with the help of the Figma-Low-Code plugin:
 
-1. Simply launch the plugin
+1. Launch the plugin
 2. Select the desired element.
-3. Select the 'Data & Mathod Binding tab.'
+3. Select the 'Low Code Tab'.
 4. Enter the name of the method taht should be called on the event (click or change are supported for now)
-
-![The Figma-Low-Code plugin](assets/PluginBinding.png "Select the method name ot be called")
 
 
 During run time, the figma component will look for a method with the given name in the parent component (in the example  Home.vue). If the method exists, it will be called. The method will have the following signature:
@@ -176,13 +171,12 @@ If a method return a String matching a screen name, the page will be loaded. In 
 
 If the provided input elements are not enough, you can also hook in your own VUE components. To do so:
 
-1. Simply launch the plugin
+1. Launch the plugin
 2. Select the desired element.
 3. Select the 'Element Type' tab
 4. Select Custom
 5. Enter the name of the component
 
-![The Figma-Low-Code plugin](assets/PluginBinding.png "Select the type")
 
 Furthermore you will need to register the component with the **Figma** component.
 
