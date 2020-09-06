@@ -102,7 +102,7 @@ export default {
 
 To use the advanced features such as data, method binding or input widgets, you must install the  [Figma-Low-Code plugin](https://www.figma.com/community/plugin/858477504263032980/Figma-Low-Code).
 
-![The Figma-Low-Code plugin](assets/Plugin.png "Figma-Low-Code plugin")
+![The Figma-Low-Code plugin](assets/PluginLowCode.png "Figma-Low-Code plugin")
 
 
 
