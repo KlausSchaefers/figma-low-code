@@ -105,6 +105,7 @@ To use the advanced features such as data, method binding or input widgets, you 
 ![The Figma-Low-Code plugin](assets/PluginLowCode.png "Figma-Low-Code plugin")
 
 
+![The Figma-Low-Code plugin](assets/PluginStyle.png "Figma-Low-Code plugin")
 
 ## Input Elements
 
