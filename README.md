@@ -100,10 +100,11 @@ export default {
 
 ## Figma Plugin
 
-To use the advanced features such as data, method binding or input widgets, you must install the  [Figma-Low-Code plugin](https://www.figma.com/community/plugin/858477504263032980/Figma-Low-Code).
+To use the advanced features such as data, method binding or input widgets, you must install the  [Figma-Low-Code plugin](https://www.figma.com/community/plugin/858477504263032980/Figma-Low-Code). The plugin has two main tab. The 'Low Code' tab allows you to set the basics, such as the element type, or the input and output data binding.
 
 ![The Figma-Low-Code plugin](assets/PluginLowCode.png "Figma-Low-Code plugin")
 
+The 'Style' tab allows you to define, if the element should be fixed width or height. By default Figma Low Code will assume hat the widget is responsive. Also, you can define hover styles for the fill, stroke and text color. For input elements focus styles can also be defined.
 
 ![The Figma-Low-Code plugin](assets/PluginStyle.png "Figma-Low-Code plugin")
 
@@ -218,6 +219,20 @@ export default {
 </script>
 
 ```
+
+
+## Hover and Focus effects
+
+Often you want certain elements to have a hover effect. For instance, a button should
+change the background color if the mouse is hovering it. Also, it is useful to indicate if an input is focused by the user.
+To create these kind of effects, perform the following steps:
+
+1. Launch the plugin
+2. Select the desired element.
+3. Select the 'Style' tab
+4. Select a fill (stroke or text) color.
+
+Please note that the colors must be defined upfront in the Figma file, for instance as a style.
 
 
 # Deployment
