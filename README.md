@@ -102,7 +102,7 @@ export default {
 
 To use the advanced features such as data, method binding or input widgets, you must install the  [Figma-Low-Code plugin](https://www.figma.com/community/plugin/858477504263032980/Figma-Low-Code). The plugin has two main tab. The 'Low Code' tab allows you to set the basics, such as the element type, or the input and output data binding.
 
-![The Figma-Low-Code plugin](assets/PluginLowCode.png "Figma-Low-Code plugin")
+![The Figma-Low-Code plugin](assets/PluginLowCode2.png "Figma-Low-Code plugin")
 
 The 'Style' tab allows you to define, if the element should be fixed width or height. By default Figma Low Code will assume hat the widget is responsive. Also, you can define hover styles for the fill, stroke and text color. For input elements focus styles can also be defined.
 
