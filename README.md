@@ -1,6 +1,9 @@
 # Fimga-Low-Code
-The Figma-Low-Code package provides a new approach to the hand-off problem (See details below). The core of the solution is the **Figma** component,
-which renders the visual design and allows the developers to focus on business logic, without restricting the developers' freedom. The component enables:
+
+Figma-Low-Code is an OpenSource project, that allows to use **Figma** designs directly in **VUE.js** applications. Business logic and data is written as plain JavaScript and 'wired' through data- and method-binding to the visual design. The bindings are defined with the help of a Figma plugin. The low code approach reduces drastically the hand-off time between designers and developers, reduces UI code and ensures that the Figma design stays the single source of truth.
+
+# Idea
+The core of the solution is the **Figma** VUE.js component, which renders the visual design and allows the developers to focus on business logic, without restricting the developers' freedom. The component enables:
 
 1. Zero Code rendering of visual design.
 2. Design changes do not require code changes
