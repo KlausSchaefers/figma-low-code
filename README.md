@@ -4,7 +4,7 @@ Figma-Low-Code is an OpenSource project, that allows to use **Figma** designs di
 
 # Introduction Video
 
-[![Short introduction into FigmaLowCode](https://img.youtube.com/vi/iyu2rSbUwU8/0.jpg)](https://www.youtube.com/watch?v=iyu2rSbUwU8)
+[![Short introduction into FigmaLowCode](assets/SimpleProcess_5a.png)](https://www.youtube.com/watch?v=iyu2rSbUwU8)
 
 
 
