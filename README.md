@@ -52,13 +52,13 @@ git clone https://github.com/KlausSchaefers/figma-low-code.git
 
 Afterwards, load all dependecies with the following command
 
-```
+``` sh
 npm install
 ```
 
 Finally start the server
 
-```
+``` sh
 npm run serve
 ```
 
@@ -73,7 +73,7 @@ https://www.figma.com/file/<FigmaFileId>/...
 
 Once you have entered the values, the Home.vue should look like:
 
-```
+``` vue
 <template>
   <div class="home">
     <Figma :figma="figmaConfig" v-model="viewModel"/>
@@ -132,7 +132,7 @@ widgets the desired element type.
 
 Figma-Low-Code supports VUE data binding. You have to pass a v-model to the **Figma** component.
 
-```
+``` vue
 <Figma :figma="figmaFile" v-model="viewModel"/>
 ```
 
@@ -146,7 +146,7 @@ You can specify the databinding with the help of the Figma-Low-Code plugin:
 
 During runtime, the low-code component will update the viewModel and add the values entered by the user, e.g.
 
-```
+``` js
     viewModel: {
         user: {
           name: "Klaus"
@@ -166,7 +166,7 @@ In the Figma-Low-Code plugin you can define javascript callbacks for the element
 
 During run time, the figma component will look for a method with the given name in the parent component (in the example  Home.vue). If the method exists, it will be called. The method will have the following signature:
 
-```
+``` js
 myMethod (value, element, e) {
  ...
  return 'Screen2'
@@ -190,7 +190,7 @@ If the provided input elements are not enough, you can also hook in your own VUE
 
 Furthermore you will need to register the component with the **Figma** component.
 
-```
+``` vue
 <template>
   <div class="home">
     <Figma :figma="figmaConfig" v-model="viewModel" :config="config"/>
@@ -250,13 +250,13 @@ Working with the file and access key is great for testing and development, becau
 However, for production you should **NEVER** use the access token, as it gives access
 to all your projects. You can download all files into the project by calling the download script.
 
-```
+``` sh
 node download.js <access_token> <figma_file_id>
 ```
 
 The script will download the figma file and all images. You have to point the Figma Component now to the file, instead of the config object. Use an import statement to simply load the JSON.
 
-```
+``` vue
 ...
 <Figma :figma="figmaFile" v-model="viewModel"/>
 ...
@@ -282,13 +282,13 @@ export default {
 You can configure certain parameters, e.g. the routing rules. To do so, pass a config object to the
 **Figma** component.
 
-```
+``` vue
 <Figma :figma="figmaFile":config="config"/>
 ```
 
 The config object can have the following properties and hsould be defined in the data section of the home component.
 
-```
+``` js
     config: {
         css: {
           grid: true, // Use CSS grid to align objects. False will use CSS-Flex.
@@ -309,10 +309,11 @@ You can do this by passing a **components** array to the configuration. These co
 location instead of the default Figma component. This approach allows you to fully manage certain parts of the UI. Data is passed
 as a **value** property and follows default VUE practices.
 
-```
+``` vue
 <Figma :app="app" :config="config"/>
 ...
 
+<script>
 import MyWidget from 'src/myWidget'
 
 ...
@@ -326,6 +327,7 @@ config = {
     }
   ]
 }
+</script>
 ```
 
 You specify the widget to be replaced by the custom widget by a css selector. For instance if you want to replace the
@@ -336,13 +338,13 @@ widget with the name "Custom" on the "StartScreen" artboard, use the ".StartScre
 
 If you are using the Quant-UX icons components, you have to install the mdi-font package.
 
-```
+``` sh
 npm install @mdi/font
 ```
 
 Afterwards import the icons in the App.vue
 
-```
+``` js
 import '@mdi/font/css/materialdesignicons.css'
 ```
 
