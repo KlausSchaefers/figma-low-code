@@ -200,7 +200,7 @@ Furthermore you will need to register the component with the **Figma** component
 <script>
 import Vue from "vue";
 import Figma from 'vue-low-code'
-import MyComponent from './MyCompenet.vue
+import MyComponent from './MyComponent.vue';
 Vue.use(Figma);
 
 export default {
