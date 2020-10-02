@@ -261,7 +261,7 @@ The script will download the figma file and all images. You have to point the Fi
 <Figma :figma="figmaFile" v-model="viewModel"/>
 ...
 
-
+<script>
 import FigmaFile from './app.json'
 
 export default {
@@ -273,6 +273,7 @@ export default {
     }
   },
 ...
+</script>
 
 ```
 
