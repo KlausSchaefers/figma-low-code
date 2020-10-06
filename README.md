@@ -6,7 +6,11 @@ Figma-Low-Code is an OpenSource project, that allows to use **Figma** designs di
 
 [![Short introduction into FigmaLowCode](assets/SimpleProcess_5a.png)](https://www.youtube.com/watch?v=iyu2rSbUwU8)
 
+The example project can be found here:
 
+[Project](https://github.com/KlausSchaefers/figma-low-code-todo)
+
+[Figma File](https://www.figma.com/community/file/887084011990415230)
 
 # Idea
 The core of the solution is the **Figma** VUE.js component, which renders the visual design and allows the developers to focus on business logic, without restricting the developers' freedom. The component enables:
