@@ -12,6 +12,8 @@ The example project can be found here:
 
 [Figma File](https://www.figma.com/community/file/887084011990415230)
 
+[Step by step guide](https://youtu.be/n8YvL_YvXRA)
+
 # Idea
 The core of the solution is the **Figma** VUE.js component, which renders the visual design and allows the developers to focus on business logic, without restricting the developers' freedom. The component enables:
 
