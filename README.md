@@ -1,6 +1,6 @@
 # Figma-Low-Code
 
-Figma-Low-Code is an OpenSource project, that allows to use **Figma** designs directly in **VUE.js** applications. Business logic and data is written as plain JavaScript and 'wired' through data- and method-binding to the visual design. The bindings are defined with the help of a Figma [plugin](https://www.figma.com/community/plugin/858477504263032980/Figma-Low-Code). The low code approach reduces drastically the hand-off time between designers and developers, reduces UI code and ensures that the Figma design stays the single source of truth.
+Figma-Low-Code is an OpenSource project, that allows to use **Figma** designs directly in **VUE.js** applications. The low code approach reduces drastically the hand-off time between designers and developers, reduces front-end code and ensures that the Figma design stays the **single source of truth**.
 
 
 [![Short introduction into FigmaLowCode](assets/SimpleProcess_5a.png)](https://www.youtube.com/watch?v=iyu2rSbUwU8)
@@ -18,9 +18,9 @@ The example project can be found here:
 [Figma-Low-Code Design System Example](https://github.com/KlausSchaefers/figma-design-system-example)
 
 ## Idea
-The core of the solution is the **Figma** VUE.js component, which renders the visual design and allows the developers to focus on business logic, without restricting the developers' freedom. The component enables:
+The core idea of the project is to render the visual design automatically and allow the development team to focus on business logic, without restricting the developers' freedom. Figma-Low-Code enables:
 
-1. Zero Code rendering of visual design.
+1. Zero Code rendering of app designs, prototypes and design systems.
 2. Design changes do not require code changes
 3. Clear separation of UI and business logic
 4. Developers can focus on code
@@ -42,7 +42,7 @@ business logic. The front-end developers will usually do little UI customization
 
 ![Vue-Low-Code architecture](assets/LowCodeModes.png "Vue-Low-Code support to modes of operations")
 
-The full mode will in general result to a faster development experience, however the developers have less control over the front end. The 'Design System' mode speeds up development and helps to implement design systems. Please note, that both approaches will maintain the design as the single source of truth. Design channges will be instantly visible in the application.
+The full mode will result in a faster development experience, however developers have less control over the front end. The 'Design System' gives more control for the developers, while still easing the transintion from design to code. Please note, that both approaches will maintain the design as the **single source of truth**. Design channges will be instantly visible in the application.
 
 
 ## Plugin:
