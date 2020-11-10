@@ -343,13 +343,6 @@ The Vue-Low-Code package provides a method for Figma (`createFigmaDesignSystem`)
 node download.js <api token> <fileID>
 ```
 
-For Quant-UX you can use share key or download the file with the *QuantUX-CLI*:
-
-```bash
-npm install -g quant-ux-cli
-quant-ux
-```
-
 
 ### Using the Figma-Low-Code Design System
 
