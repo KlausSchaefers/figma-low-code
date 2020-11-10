@@ -42,7 +42,7 @@ business logic. The front-end developers will usually do little UI customization
 
 ![Vue-Low-Code architecture](assets/LowCodeModes.png "Vue-Low-Code support to modes of operations")
 
-The full mode will result in a faster development experience, however developers have less control over the front end. The 'Design System' gives more control for the developers, while still easing the transition from design to code. Please note, that both approaches will maintain the design as the **single source of truth**. Design channges will be immediately visible in the application.
+The full mode will result in a faster development experience, however developers have less control over the front end. The 'Design System' mode gives more control for the developers, while still easing the transition from design to code. Please note, that both approaches will maintain the design as the **single source of truth**. Design channges will be immediately visible in the application.
 
 
 ## Plugin:
