@@ -135,6 +135,19 @@ export default {
 
 ```
 
+
+**Attention** For large design the Figma API might give an error or be slow. It can help to limit the <Figma> component to a certain page.
+``` vue
+<template>
+  <div class="home">
+    <Figma :figma="figmaConfig" v-model="viewModel" page="Page 1"/>
+  </div>
+</template>
+
+```
+
+
+
 ### Input Elements
 
 By default Figma-Low-Code renders all elements of the design as div, span and label elements. Often this is not enough, and you
@@ -287,21 +300,6 @@ You specify the widget to be replaced by the custom widget by a css selector. Fo
 widget with the name "Custom" on the "StartScreen" artboard, use the ".StartScreen .Custom" selector.
 
 
-### MDI Icons
-
-If you are using the Quant-UX icons components, you have to install the mdi-font package.
-
-``` sh
-npm install @mdi/font
-```
-
-Afterwards import the icons in the App.vue
-
-``` js
-import '@mdi/font/css/materialdesignicons.css'
-```
-
-
 ## Design System Mode
 
 
@@ -341,6 +339,12 @@ The Vue-Low-Code package provides a method for Figma (`createFigmaDesignSystem`)
 
 ```bash
 node download.js <api token> <fileID>
+```
+
+You can also pass the name of a page, to limit the import. Just passs the page name as the third parameter.
+
+```bash
+node download.js <api token> <fileID> <page name>
 ```
 
 

@@ -25,16 +25,17 @@ const fileFolderTarget = 'public/img'
  */
 const figmaAccessKey = process.argv[2]
 const figmaFileId = process.argv[3]
-
+const figmaPageId = process.argv[4]
 
 /**
  * Check if inout is ok
  */
 if (!figmaAccessKey || !figmaFileId) {
   console.debug(chalk.red('Plesse add the figma access token and file id'))
-  console.debug('Example: node download.js <accessToken> <fileKey>')
+  console.debug('Example: node download.js <accessToken> <fileKey> <page name>*')
   return
 }
+
 
 /**
  * Enable fetch polyfill
@@ -44,14 +45,20 @@ if (!globalThis.fetch) {
   globalThis.Headers = fetch.Headers
 }
 
+var selectedPages = figmaPageId ? [figmaPageId] : []
 /**
  * Start downloading
  */
 const streamPipeline = util.promisify(require('stream').pipeline);
 vueLowCode.setLogLevel(-5)
+
 const figmaService = new vueLowCode.createFigmaService(figmaAccessKey)
 console.debug(chalk.blue('Download Figma file...'))
-figmaService.get(figmaFileId, true).then(async app => {
+if (figmaPageId) {
+  console.debug(chalk.blue('Limit to page...' + figmaPageId))
+}
+
+figmaService.get(figmaFileId, true, false, selectedPages).then(async app => {
   console.debug(chalk.blue('Download images:'))
 
   const widgetsWithImages = Object.values(app.widgets).filter(w => {
