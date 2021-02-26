@@ -67,8 +67,9 @@ Table of contents
 2. [Full Mode](#Full-Mode)
 3. [Design System Mode](#Design-System-Mode)
 4. [Deployment](#Deployment)
-5. [Low Code Workflow](#Low-Code-Workflow)
-6. [Contact & Support](#Contact-and-Support)
+5. [Responsive Rendering](#Responsive-Rendering)
+6. [Low Code Workflow](#Low-Code-Workflow)
+7. [Contact & Support](#Contact-and-Support)
 
 
 ## How to install Figma-Low-Code
@@ -201,6 +202,62 @@ myMethod (value, element, e) {
 
 If a method return a String matching a screen name, the page will be loaded. In the example the screen with the name 'Screen2'.
 
+### Responsive Rendering
+
+You can configure Figma-Low-Code to use different Figma pages for different screen resolutions. You can for instance define that the page 'A' is used of mobiles and 'B' is used for desktop and tablets. You can pass the mapping between pages and devices as part of the config object.
+
+```vue
+<template>
+  <div class="home">
+    <Figma :figma="figmaConfig" v-model="viewModel" :config="config"/>
+  </div>
+</template>
+
+<script>
+import Vue from "vue";
+import Figma from "vue-low-code";
+Vue.use(Figma);
+
+export default {
+  name: "Home",
+  data: function () {
+    return {
+      figmaConfig: {
+        figmaFile: "",
+        figmaAccessKey: "",
+      },
+      viewModel: {
+        /**
+         * Add your view model here
+         */
+      },
+      config: {
+        /**
+         * Configure the reponsive behavior here. The 'value'
+         * property is the name of the Figma page.
+         **/
+        responsive: [
+          { value: "A", types: ["desktop"] },
+          { value: "B", types: ["tablet", "mobile"] },
+        ],
+        components: {
+          /**
+           * Register costum components here
+           */
+        },
+      },
+    };
+  },
+  components: {},
+  methods: {
+    /**
+     * Place your methods here
+     */
+  },
+};
+</script>
+
+```
 
 ### Custom components
 

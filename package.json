@@ -14,7 +14,7 @@
     "node-fetch": "^2.6.0",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
-    "vue-low-code": "^0.4.49",
+    "vue-low-code": "^1.0.1",
     "vue-router": "^3.1.6"
   },
   "devDependencies": {
