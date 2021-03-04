@@ -233,12 +233,12 @@ export default {
       },
       config: {
         /**
-         * Configure the reponsive behavior here. The 'value'
+         * Configure the reponsive behavior here. The 'page'
          * property is the name of the Figma page.
          **/
         responsive: [
-          { value: "A", types: ["desktop"] },
-          { value: "B", types: ["tablet", "mobile"] },
+          { page: "A", types: ["desktop"] },
+          { page: "B", types: ["tablet", "mobile"] },
         ],
         components: {
           /**
