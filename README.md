@@ -204,7 +204,11 @@ If a method return a String matching a screen name, the page will be loaded. In 
 
 ### Responsive Rendering
 
-You can configure Figma-Low-Code to use different Figma pages for different screen resolutions. You can for instance define that the page 'A' is used of mobiles and 'B' is used for desktop and tablets. You can pass the mapping between pages and devices as part of the config object.
+You can configure Figma-Low-Code to use different Figma pages for different screen resolutions. You can for instance define
+that the page 'A' is used of mobiles and 'B' is used for desktop and tablets. You can pass the
+mapping between pages and devices as part of the config object.
+
+Check out this [example](https://youtu.be/VIJiMAXUB-g?t=32)
 
 ```vue
 <template>
