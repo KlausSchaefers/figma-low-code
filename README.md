@@ -80,6 +80,12 @@ The easiest way to use Figma-Low-Code is to clone this repository and install No
 git clone https://github.com/KlausSchaefers/figma-low-code.git
 ```
 
+Navigate to the cloned repository
+
+```
+cd figma-low-code
+```
+
 Afterwards, load all dependecies with the following command
 
 ``` sh
