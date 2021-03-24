@@ -5,15 +5,19 @@ Figma-Low-Code is an OpenSource project, that allows to use **Figma** designs di
 
 [![Short introduction into FigmaLowCode](assets/SimpleProcess_5a.png)](https://www.youtube.com/watch?v=iyu2rSbUwU8)
 
-The example project can be found here:
+
+I have created to short tutorials in YouTube:
+
+[Video - Quick Tutorial](https://www.youtube.com/watch?v=iyu2rSbUwU8)
+
+[Video - Step by step guide](https://youtu.be/n8YvL_YvXRA)
+
+
+Example project scan be found here:
 
 [Figma Low Code ToDo Example](https://github.com/KlausSchaefers/figma-low-code-todo)
 
 [Figma File](https://www.figma.com/community/file/887084011990415230)
-
-[Quick Tutorial](https://www.youtube.com/watch?v=iyu2rSbUwU8)
-
-[Step by step guide](https://youtu.be/n8YvL_YvXRA)
 
 [Figma-Low-Code Design System Example](https://github.com/KlausSchaefers/figma-design-system-example)
 
