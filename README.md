@@ -506,7 +506,6 @@ export default {
 
 ```
 
-
 # Configure figma-low-code
 
 You can configure certain parameters, e.g. the routing rules. To do so, pass a config object to the
@@ -520,6 +519,7 @@ The config object can have the following properties and hsould be defined in the
 
 ``` js
     config: {
+        loadFonts: false,
         css: {
           grid: true, // Use CSS grid to align objects. False will use CSS-Flex.
           justifyContentInWrapper: true // In justifz or left align content in wrapped elements
@@ -530,6 +530,9 @@ The config object can have the following properties and hsould be defined in the
         }
     }
 ```
+
+Youmight also want to import the fonts in you index.html. Figma-Low-Code will load them by default dynamically. If you want to prevent this,
+set the 'loadFonts' property to false
 
 
 
