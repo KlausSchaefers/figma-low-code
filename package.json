@@ -1,6 +1,6 @@
 {
   "name": "figma-low-code",
-  "version": "0.3.8",
+  "version": "1.0.14",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
