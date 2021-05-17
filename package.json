@@ -1,6 +1,6 @@
 {
   "name": "figma-low-code",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -14,7 +14,7 @@
     "node-fetch": "^2.6.0",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
-    "vue-low-code": "^1.0.14",
+    "vue-low-code": "^1.0.15",
     "vue-router": "^3.1.6"
   },
   "devDependencies": {
