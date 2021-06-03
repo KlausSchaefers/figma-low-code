@@ -66,14 +66,19 @@ figmaService.get(figmaFileId, true, false, selectedPages).then(async app => {
   })
   var promisses = widgetsWithImages.map(async w => {
     const imageURL = w.props.figmaImage
-    var imageFileTarget = fileFolderTarget + '/' + w.id +'.png'
-    console.debug(chalk.blueBright('  - ' + imageFileTarget))
-    const response = await fetch(imageURL);
-    if (response.ok) {
-      w.style.backgroundImage = {
-        url: w.id +'.png'
+    try {
+      var imageFileTarget = fileFolderTarget + '/' + w.id +'.png'
+      console.debug(chalk.blueBright('  - ' + imageFileTarget) , chalk.gray('(' + imageURL + ')'))
+      const response = await fetch(imageURL);
+      if (response.ok) {
+        w.style.backgroundImage = {
+          url: w.id +'.png'
+        }
+        return streamPipeline(response.body, fs.createWriteStream(imageFileTarget));
       }
-      return streamPipeline(response.body, fs.createWriteStream(imageFileTarget));
+    } catch (e) {
+      console.debug(chalk.red(' ! Could not download element: ' + w.name + ' url:' + imageURL))
+      return new Promise(resolve => resolve())
     }
   })
   await Promise.all(promisses)
