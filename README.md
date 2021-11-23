@@ -1,9 +1,14 @@
 # Figma-Low-Code
 
-Figma-Low-Code is an OpenSource project, that allows to use **Figma** designs directly in **VUE.js** applications. The low code approach reduces drastically the hand-off time between designers and developers, reduces front-end code and ensures that the Figma design stays the **single source of truth**.
+Figma-Low-Code is an OpenSource project, that allows to use **Figma** designs directly in **VUE.js** applications. The low code approach reduces drastically the hand-off time between designers and developers, reduces front-end code and ensures that the Figma design stays the **single source of truth**. Figma-Low-Code uses the Luisa framework.
 
 
 [![Short introduction into FigmaLowCode](assets/SimpleProcess_5a.png)](https://www.youtube.com/watch?v=iyu2rSbUwU8)
+
+
+You can find the documentation here:
+
+[Luisa.cloud](https://luisa.cloud/help.html).
 
 
 I have created to short tutorials in YouTube:
@@ -21,6 +26,17 @@ Example project scan be found here:
 
 [Figma-Low-Code Design System Example](https://github.com/KlausSchaefers/figma-design-system-example)
 
+
+## When to use
+
+Figma-Low-Code is great to use, when you want to:
+
+1. Turn a Figma design into a VUE application.
+2. Extend a Figma prototype with business logic.
+3. Build and MVP and the design changes often.
+4. Ship fast and do not want to focus on HTML and CSS.
+
+
 ## Idea
 The core idea of the project is to render the visual design automatically and allow the development team to focus on business logic, without restricting the developers' freedom. Figma-Low-Code enables:
 
@@ -35,6 +51,14 @@ The core idea of the project is to render the visual design automatically and al
 9. Extension with custom components
 10. Extension with custom CSS
 11. Rich library of stylable components.
+
+
+
+## Documentation
+
+You can find the documentation at [Luisa.cloud](https://luisa.cloud/help.html).
+
+
 
 ## Two ways of using Figma-Low-Code
 

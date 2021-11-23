@@ -7,14 +7,15 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "download": "node download.js"
+    "download": "node node_modules/luisa-util/lib/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.4",
+    "luisa-util": "^1.0.4",
+    "luisa-vue": "^2.0.11",
     "node-fetch": "^2.6.0",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
-    "vue-low-code": "^1.0.18",
     "vue-router": "^3.1.6"
   },
   "devDependencies": {

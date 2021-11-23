@@ -1,0 +1,504 @@
+{
+  "version": 2.1,
+  "id": "8aw4XrD9mPfGcwrtw6LWP2",
+  "figmaId": "8aw4XrD9mPfGcwrtw6LWP2",
+  "name": "Luisa - Hello World",
+  "description": "",
+  "screenSize": {
+    "w": 375,
+    "h": 812
+  },
+  "type": "smartphone",
+  "screens": {
+    "s10000": {
+      "id": "s10000",
+      "figmaId": "1:3",
+      "pageName": "Page 1",
+      "name": "HelloWorld",
+      "type": "Screen",
+      "x": 223,
+      "y": -345,
+      "w": 375,
+      "h": 812,
+      "props": {},
+      "children": [
+        "w10001",
+        "w10002",
+        "w10003",
+        "w10004",
+        "w10005",
+        "w10006",
+        "w10007",
+        "w10008"
+      ],
+      "layout": {
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "style": {
+        "fontFamily": "Helvetica Neue,Helvetica,Arial,sans-serif",
+        "borderBottomWidth": 0,
+        "borderTopWidth": 0,
+        "borderLeftWidth": 0,
+        "borderRightWidth": 0,
+        "backgroundColor": "rgba(255, 255, 255, 1)"
+      }
+    }
+  },
+  "widgets": {
+    "w10001": {
+      "id": "w10001",
+      "parentId": "s10000",
+      "name": "FormCol",
+      "type": "Button",
+      "figmaId": "0:10",
+      "figmaType": "FRAME",
+      "x": 248,
+      "y": -294,
+      "w": 326,
+      "h": 205,
+      "layout": {
+        "type": "auto-vertical",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start",
+        "itemSpacing": 24,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "z": 2,
+      "style": {
+        "fontFamily": "Helvetica Neue,Helvetica,Arial,sans-serif",
+        "borderBottomWidth": 0,
+        "borderTopWidth": 0,
+        "borderLeftWidth": 0,
+        "borderRightWidth": 0,
+        "backgroundColor": "rgba(0, 0, 0, 0)"
+      },
+      "props": {
+        "resize": {
+          "right": false,
+          "left": true,
+          "up": false,
+          "down": false,
+          "fixedHorizontal": true,
+          "fixedVertical": false
+        }
+      },
+      "has": {
+        "label": true,
+        "backgroundColor": true,
+        "border": true,
+        "onclick": true,
+        "padding": true
+      }
+    },
+    "w10002": {
+      "id": "w10002",
+      "parentId": "w10001",
+      "name": "OpenSourceHeadline",
+      "type": "Label",
+      "figmaId": "0:11",
+      "figmaType": "TEXT",
+      "x": 248,
+      "y": -294,
+      "w": 169,
+      "h": 28,
+      "layout": {
+        "align": "INHERIT",
+        "grow": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "z": 3,
+      "style": {
+        "fontFamily": "Nunito Sans",
+        "borderBottomWidth": 0,
+        "borderTopWidth": 0,
+        "borderLeftWidth": 0,
+        "borderRightWidth": 0,
+        "color": "rgba(0, 0, 0, 1)",
+        "backgroundColor": "transparent",
+        "fontSize": 20,
+        "fontWeight": 700,
+        "lineHeightPX": 28,
+        "letterSpacing": 0,
+        "textAlign": "left",
+        "verticalAlign": "top"
+      },
+      "props": {
+        "label": "What is you name",
+        "resize": {
+          "right": false,
+          "left": true,
+          "up": false,
+          "down": false,
+          "fixedHorizontal": true,
+          "fixedVertical": false,
+          "hugVertical": true
+        }
+      },
+      "has": {
+        "label": true,
+        "padding": true,
+        "advancedText": true
+      }
+    },
+    "w10003": {
+      "id": "w10003",
+      "parentId": "w10001",
+      "name": "Frame 1",
+      "type": "Button",
+      "figmaId": "0:12",
+      "figmaType": "FRAME",
+      "x": 248,
+      "y": -242,
+      "w": 326,
+      "h": 40,
+      "layout": {
+        "type": "auto-horizontal",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start",
+        "itemSpacing": 10,
+        "align": "STRETCH",
+        "grow": 0,
+        "paddingLeft": 6,
+        "paddingRight": 6,
+        "paddingTop": 6,
+        "paddingBottom": 6
+      },
+      "z": 4,
+      "style": {
+        "fontFamily": "Helvetica Neue,Helvetica,Arial,sans-serif",
+        "borderBottomWidth": 2,
+        "borderTopWidth": 2,
+        "borderLeftWidth": 2,
+        "borderRightWidth": 2,
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderBottomLeftRadius": 8,
+        "borderTopLeftRadius": 8,
+        "borderBottomRightRadius": 8,
+        "borderTopRightRadius": 8,
+        "borderBottomColor": "rgba(0, 0, 0, 1)",
+        "borderTopColor": "rgba(0, 0, 0, 1)",
+        "borderLeftColor": "rgba(0, 0, 0, 1)",
+        "borderRightColor": "rgba(0, 0, 0, 1)"
+      },
+      "props": {
+        "resize": {
+          "right": false,
+          "left": true,
+          "up": false,
+          "down": false,
+          "fixedHorizontal": false,
+          "fixedVertical": false
+        }
+      },
+      "has": {
+        "label": true,
+        "backgroundColor": true,
+        "border": true,
+        "onclick": true,
+        "padding": true
+      }
+    },
+    "w10004": {
+      "id": "w10004",
+      "parentId": "w10003",
+      "name": "Your name",
+      "type": "Label",
+      "figmaId": "0:13",
+      "figmaType": "TEXT",
+      "x": 256,
+      "y": -234,
+      "w": 310,
+      "h": 24,
+      "layout": {
+        "align": "STRETCH",
+        "grow": 1,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "z": 5,
+      "style": {
+        "fontFamily": "Nunito Sans",
+        "borderBottomWidth": 0,
+        "borderTopWidth": 0,
+        "borderLeftWidth": 0,
+        "borderRightWidth": 0,
+        "color": "rgba(0, 0, 0, 1)",
+        "backgroundColor": "transparent",
+        "fontSize": 18,
+        "fontWeight": 400,
+        "lineHeightPX": 28,
+        "letterSpacing": 0,
+        "textAlign": "left",
+        "verticalAlign": "top"
+      },
+      "props": {
+        "label": "Your name",
+        "resize": {
+          "right": false,
+          "left": true,
+          "up": false,
+          "down": false,
+          "fixedHorizontal": false,
+          "fixedVertical": false
+        }
+      },
+      "has": {
+        "label": true,
+        "padding": true,
+        "advancedText": true
+      }
+    },
+    "w10005": {
+      "id": "w10005",
+      "parentId": "w10001",
+      "name": "Btns",
+      "type": "Button",
+      "figmaId": "0:14",
+      "figmaType": "FRAME",
+      "x": 248,
+      "y": -178,
+      "w": 326,
+      "h": 51,
+      "layout": {
+        "type": "auto-horizontal",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start",
+        "itemSpacing": 32,
+        "align": "STRETCH",
+        "grow": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "z": 6,
+      "style": {
+        "fontFamily": "Helvetica Neue,Helvetica,Arial,sans-serif",
+        "borderBottomWidth": 0,
+        "borderTopWidth": 0,
+        "borderLeftWidth": 0,
+        "borderRightWidth": 0,
+        "backgroundColor": "rgba(0, 0, 0, 0)"
+      },
+      "props": {
+        "resize": {
+          "right": false,
+          "left": true,
+          "up": false,
+          "down": false,
+          "fixedHorizontal": false,
+          "fixedVertical": false
+        }
+      },
+      "has": {
+        "label": true,
+        "backgroundColor": true,
+        "border": true,
+        "onclick": true,
+        "padding": true
+      }
+    },
+    "w10006": {
+      "id": "w10006",
+      "parentId": "w10005",
+      "name": "ButtonWhy",
+      "type": "Button",
+      "figmaId": "0:15",
+      "figmaType": "INSTANCE",
+      "figmaComponentId": "0:3",
+      "x": 248,
+      "y": -178,
+      "w": 61,
+      "h": 42,
+      "layout": {
+        "type": "auto-horizontal",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start",
+        "itemSpacing": 10,
+        "align": "INHERIT",
+        "grow": 0,
+        "paddingLeft": 14,
+        "paddingRight": 14,
+        "paddingTop": 6,
+        "paddingBottom": 6
+      },
+      "z": 7,
+      "style": {
+        "fontFamily": "Helvetica Neue,Helvetica,Arial,sans-serif",
+        "borderBottomWidth": 2,
+        "borderTopWidth": 2,
+        "borderLeftWidth": 2,
+        "borderRightWidth": 2,
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderBottomLeftRadius": 6,
+        "borderTopLeftRadius": 6,
+        "borderBottomRightRadius": 6,
+        "borderTopRightRadius": 6,
+        "borderBottomColor": "rgba(241, 91, 181, 1)",
+        "borderTopColor": "rgba(241, 91, 181, 1)",
+        "borderLeftColor": "rgba(241, 91, 181, 1)",
+        "borderRightColor": "rgba(241, 91, 181, 1)"
+      },
+      "props": {
+        "resize": {
+          "right": false,
+          "left": true,
+          "up": false,
+          "down": false,
+          "fixedHorizontal": true,
+          "fixedVertical": false,
+          "hugHorizontal": true
+        },
+        "callbacks": {
+          "click": "sendContact"
+        }
+      },
+      "has": {
+        "label": true,
+        "backgroundColor": true,
+        "border": true,
+        "onclick": true,
+        "padding": true
+      },
+      "hover": {
+        "background": "rgba(241, 91, 181, 1)",
+        "color": "rgba(255, 255, 255, 1)"
+      }
+    },
+    "w10007": {
+      "id": "w10007",
+      "parentId": "w10006",
+      "name": "ButtonLabel",
+      "type": "Label",
+      "figmaId": "I0:15;0:4",
+      "figmaType": "TEXT",
+      "figmaComponentId": "0:4",
+      "x": 264,
+      "y": -170,
+      "w": 29,
+      "h": 26,
+      "layout": {
+        "align": "INHERIT",
+        "grow": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "z": 8,
+      "style": {
+        "fontFamily": "Roboto",
+        "borderBottomWidth": 0,
+        "borderTopWidth": 0,
+        "borderLeftWidth": 0,
+        "borderRightWidth": 0,
+        "color": "rgba(241, 91, 181, 1)",
+        "backgroundColor": "transparent",
+        "fontSize": 18,
+        "fontWeight": 400,
+        "lineHeightPX": 26,
+        "letterSpacing": 0,
+        "textAlign": "center",
+        "verticalAlign": "middle"
+      },
+      "props": {
+        "label": "Say",
+        "resize": {
+          "right": false,
+          "left": true,
+          "up": false,
+          "down": false,
+          "fixedHorizontal": true,
+          "fixedVertical": false,
+          "hugHorizontal": true
+        }
+      },
+      "has": {
+        "label": true,
+        "padding": true,
+        "advancedText": true
+      }
+    },
+    "w10008": {
+      "id": "w10008",
+      "parentId": "w10005",
+      "name": "Hello ....",
+      "type": "Label",
+      "figmaId": "0:16",
+      "figmaType": "TEXT",
+      "x": 341,
+      "y": -178,
+      "w": 233,
+      "h": 42,
+      "layout": {
+        "align": "INHERIT",
+        "grow": 1,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0
+      },
+      "z": 9,
+      "style": {
+        "fontFamily": "Nunito Sans",
+        "borderBottomWidth": 0,
+        "borderTopWidth": 0,
+        "borderLeftWidth": 0,
+        "borderRightWidth": 0,
+        "color": "rgba(241, 91, 181, 1)",
+        "backgroundColor": "transparent",
+        "fontSize": 18,
+        "fontWeight": 400,
+        "lineHeightPX": 28,
+        "letterSpacing": 0,
+        "textAlign": "left",
+        "verticalAlign": "middle"
+      },
+      "props": {
+        "label": "Hello ....",
+        "resize": {
+          "right": false,
+          "left": true,
+          "up": false,
+          "down": false,
+          "fixedHorizontal": false,
+          "fixedVertical": false
+        },
+        "databinding": {
+          "default": "contact.status"
+        }
+      },
+      "has": {
+        "label": true,
+        "padding": true,
+        "advancedText": true
+      }
+    }
+  },
+  "lines": {},
+  "groups": {},
+  "lastUUID": 10009,
+  "lastZ": 9,
+  "lastUpdate": 0,
+  "created": 0,
+  "startScreen": "",
+  "grid": {
+    "w": 8,
+    "h": 8,
+    "style": "line",
+    "color": "#cecece",
+    "visible": false,
+    "enabled": false
+  }
+}

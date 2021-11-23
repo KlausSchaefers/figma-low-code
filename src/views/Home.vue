@@ -1,23 +1,23 @@
 <template>
   <div class="home">
-    <Figma :figma="figmaConfig" v-model="viewModel" :config="config"/>
+    <Luisa :design="figmaJSON" v-model="viewModel" :config="config"/>
   </div>
 </template>
 
 
 <script>
 import Vue from "vue";
-import Figma from "vue-low-code";
-Vue.use(Figma);
+import Luisa from "luisa-vue";
+Vue.use(Luisa);
 
 // import JSON file for deployment
-// import app from './app.json'
+import app from './app.json'
 
 export default {
   name: "Home",
   data: function () {
     return {
-      // figmaJSON: app,
+      figmaJSON: app,
       figmaConfig: {
         figmaFile: "",
         figmaAccessKey: "",
