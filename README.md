@@ -29,7 +29,7 @@ Example project scan be found here:
 
 ## When to use
 
-Figma-Low-Code is great to use, when you want to:
+Figma-Low-Code is a great fit when you want to:
 
 1. Turn a Figma design into a VUE application.
 2. Extend a Figma prototype with business logic.
@@ -54,9 +54,9 @@ The core idea of the project is to render the visual design automatically and al
 
 
 
-## Documentation
+## Documentation (Old)
 
-You can find the documentation at [Luisa.cloud](https://luisa.cloud/help.html).
+You can find the latest documentation at [Luisa.cloud](https://luisa.cloud/help.html).
 
 
 
@@ -128,7 +128,7 @@ npm run serve
 
 
 ## Full Mode
-In the full mode the <Figma> component is used to render the entire front end. The first step is top register these components in Vue. The following section will use Quant-UX design as an example.  Open the 'src/views/Home.vue' and enter your figma file id and the access code. You can get the access code in your Figma settings [(Details)](https://www.figma.com/developers/api#access-tokens).
+In the full mode the <Luisa> component is used to render the entire front end. The first step is top register these components in Vue. The following section will use Quant-UX design as an example.  Open the 'src/views/Home.vue' and enter your figma file id and the access code. You can get the access code in your Figma settings [(Details)](https://www.figma.com/developers/api#access-tokens).
 The file id is the second last url parameter
 
 ```
@@ -140,14 +140,14 @@ Once you have entered the values, the Home.vue should look like:
 ``` vue
 <template>
   <div class="home">
-    <Figma :figma="figmaConfig" v-model="viewModel"/>
+    <Luisa :design="figmaConfig" v-model="viewModel"/>
   </div>
 </template>
 
 <script>
 import Vue from "vue";
-import Figma from 'vue-low-code'
-Vue.use(Figma);
+import Luisa from 'luisa-vue'
+Vue.use(Luisa);
 
 export default {
   name: 'Home',
@@ -175,7 +175,7 @@ export default {
 ``` vue
 <template>
   <div class="home">
-    <Figma :figma="figmaConfig" v-model="viewModel" page="Page 1"/>
+    <Luisa :design="figmaConfig" v-model="viewModel" page="Page 1"/>
   </div>
 </template>
 
@@ -194,7 +194,7 @@ would like to allow the user to enter to. You can override the default rendering
 Figma-Low-Code supports VUE data binding. You have to pass a v-model to the **Figma** component.
 
 ``` vue
-<Figma :figma="figmaFile" v-model="viewModel"/>
+<Luisa :design="figmaFile" v-model="viewModel"/>
 ```
 
 You can specify the databinding with the help of the Figma-Low-Code plugin:
@@ -247,7 +247,7 @@ Check out this [example](https://youtu.be/VIJiMAXUB-g?t=32)
 ```vue
 <template>
   <div class="home">
-    <Figma :figma="figmaConfig" v-model="viewModel" :config="config"/>
+    <Luisa :design="figmaConfig" v-model="viewModel" :config="config"/>
   </div>
 </template>
 
@@ -313,15 +313,15 @@ Furthermore you will need to register the component with the **Figma** component
 ``` vue
 <template>
   <div class="home">
-    <Figma :figma="figmaConfig" v-model="viewModel" :config="config"/>
+    <Luisa :design="figmaConfig" v-model="viewModel" :config="config"/>
   </div>
 </template>
 
 <script>
 import Vue from "vue";
-import Figma from 'vue-low-code'
+import Luisa from 'luisa-vue'
 import MyComponent from './MyComponent.vue';
-Vue.use(Figma);
+Vue.use(Luisa);
 
 export default {
   name: 'Home',
@@ -408,7 +408,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
-import * as VueLowCode from 'vue-low-code'
+import * as Luisa from 'luisa-vue'
 import figmaDesign from './views/figma-design-system.json'
 
 Vue.config.productionTip = false
@@ -417,8 +417,8 @@ Vue.config.productionTip = false
  * Make sure the design is registered before the App is mounted
  */
 async function init () {
-  // for live debuging use Figma.createQUXDesignSystem(<quxSharekey>)
-  await VueLowCode.createQUXDesignSystem(quxDesign)
+  // for live debuging use Luisa.createQUXDesignSystem(<quxSharekey>)
+  await Luisa.createQUXDesignSystem(quxDesign)
 
   new Vue({
     router,
@@ -433,15 +433,8 @@ init()
 The Vue-Low-Code package provides a method for Figma (`createFigmaDesignSystem`). For Figma design systems, you use your [API token](https://www.figma.com/developers/api#access-tokens) and fileID, or you can download the Figma design using the *download.js* script
 
 ```bash
-node download.js <api token> <fileID>
+npm run download
 ```
-
-You can also pass the name of a page, to limit the import. Just passs the page name as the third parameter.
-
-```bash
-node download.js <api token> <fileID> <page name>
-```
-
 
 ### Using the Figma-Low-Code Design System
 
@@ -587,8 +580,8 @@ the design makes it hard to automize this work through code generation tools.
 
 # Contact-and-Support
 
-If you want to reach out please use the [Contact](https://quant-ux.com/#/contact.html) page or [Spectrum Chat](https://spectrum.chat/quant-ux)
+If you want to reach out please use the [Contact](https://quant-ux.com/#/contact.html) page or [Discord](https://discord.gg/TQBpfAAKmU)
 
 # Credits
 
-Figma-Low-Code is based on vue-low-code developed by [Quant-UX](https://quant-ux.com).
+Figma-Low-Code is based on [Luisa-Framework](https://luisa.cloud/help/luisa_add_existing.html) developed by [Quant-UX](https://quant-ux.com).
