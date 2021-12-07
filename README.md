@@ -10,6 +10,10 @@ You can find the documentation here:
 
 [Luisa.cloud](https://luisa.cloud/help.html).
 
+The plugin can be downloaded here:
+
+[Figma-Low-Code plugin](https://www.figma.com/community/plugin/858477504263032980/Figma-Low-Code)
+
 
 I have created to short tutorials in YouTube:
 
