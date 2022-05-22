@@ -12,7 +12,7 @@
   "dependencies": {
     "core-js": "^3.6.4",
     "luisa-util": "^1.0.4",
-    "luisa-vue": "^2.0.11",
+    "luisa-vue": "^2.0.20",
     "node-fetch": "^2.6.0",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
